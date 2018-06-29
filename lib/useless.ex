@@ -4,6 +4,11 @@ defmodule Useless do
   """
   use Application
 
+  @doc ~S"""
+  1. Start the application.
+  2. Do nothing.
+  3. Profit.
+  """
   def start(_type, _args) do
     Supervisor.start_link([], strategy: :one_for_one, name: Useless.Supervisor)
   end
