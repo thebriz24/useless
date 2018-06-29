@@ -1,11 +1,9 @@
 # Useless
+[![Hex Version](https://img.shields.io/hexpm/v/useless.svg "Hex Version")](https://hex.pm/packages/use_less)
 
-**TODO: Add description**
+Application that doesn't do anything except start up a supervisor with no children. For the purpose of having an app that a testing runtime can start and stop with no consequences.
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `useless` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +13,6 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/useless](https://hexdocs.pm/useless).
-
+## Usage
+   
+Run it with `Application.ensure_all_started/2`. Or not. It don't do nuthin'.
